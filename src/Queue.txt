@@ -1,0 +1,117 @@
+                              
+
+ --------QUEUE------------
+
+//operations on queue
+
+import java.util.*;
+
+public class Main {
+
+	public static void main(String args[])
+	{
+		Queue<String> pq = new PriorityQueue<>();
+		
+		//  to add elements
+		pq.add("Apple");
+		pq.add("Mango");
+		pq.add("Orange");
+		System.out.println("Queue is : " +pq);
+		
+		//to remove elements
+		pq.remove("Mango");
+        System.out.println("After Remove  : " + pq);
+        
+        
+        //iterating the Queue
+         Iterator iterator = pq.iterator();
+  
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next() + " ");
+	}
+}
+}
+
+
+OUTPUT:
+
+Queue is : [Apple, Mango, Orange]
+After Remove  : [Apple, Orange]
+Apple Orange
+
+
+//implementing the Linkedlist class
+
+import java.util.Queue;
+import java.util.LinkedList;
+
+class Main {
+
+    public static void main(String[] args) {
+        // Creating Queue using the LinkedList class
+        Queue<Integer> numbers = new LinkedList<>();
+
+        // offer elements to the Queue
+        numbers.offer(1);
+        numbers.offer(2);
+        numbers.offer(3);
+        System.out.println("Queue: " + numbers);
+
+        // Access elements of the Queue
+        int accessedNumber = numbers.peek();
+        System.out.println("Accessed Element: " + accessedNumber);
+
+        // Remove elements from the Queue
+        int removedNumber = numbers.poll();
+        System.out.println("Removed Element: " + removedNumber);
+
+        System.out.println("Updated Queue: " + numbers);
+    }
+}
+
+
+OUTPUT :
+
+Queue: [1, 2, 3]
+Accessed Element: 1
+Removed Element: 1
+Updated Queue: [2, 3]
+
+
+//implementing the priority queue class
+
+
+import java.util.Queue;
+import java.util.PriorityQueue;
+
+class Main {
+
+    public static void main(String[] args) {
+        // Creating Queue using the PriorityQueue class
+        Queue<Integer> numbers = new PriorityQueue<>();
+
+        // offer elements to the Queue
+        numbers.offer(5);
+        numbers.offer(1);
+        numbers.offer(2);
+        System.out.println("Queue: " + numbers);
+
+        // Access elements of the Queue
+        int accessedNumber = numbers.peek();
+        System.out.println("Accessed Element: " + accessedNumber);
+
+        // Remove elements from the Queue
+        int removedNumber = numbers.poll();
+        System.out.println("Removed Element: " + removedNumber);
+
+        System.out.println("Updated Queue: " + numbers);
+    }
+}
+
+
+OUTPUT:
+
+Queue: [1, 5, 2]
+Accessed Element: 1
+Removed Element: 1
+Updated Queue: [2, 5]
