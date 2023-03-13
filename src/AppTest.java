@@ -1,4 +1,4 @@
-package ustbatchno3.junit5testcases;
+package ustbatch3.jdbc;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
