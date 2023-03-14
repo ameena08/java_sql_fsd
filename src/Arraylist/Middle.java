@@ -1,4 +1,4 @@
-*/Write a program in java to find the middle element in ArrayList*/
+/*Write a program in java to find the middle element in ArrayList*/
 
 
 /**
