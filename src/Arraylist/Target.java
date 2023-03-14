@@ -1,3 +1,6 @@
+*/Write a program to print only the elements of ArrayList whose sum is 25 */
+
+
 /**
  * 
  */
