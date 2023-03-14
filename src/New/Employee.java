@@ -1,3 +1,12 @@
+/**Given employee table with attributes employee Id of type String,Employee name of type String, Double salary.
+Sort the employees based on the salaries.
+	Condition : if Sal>50,000 then 10% increment of previous salary.
+		    if Sal<1,00,000 then 5% increment of previous salary.
+Find employee name and Current salary after increment.
+      (Hint: Use comparable Comporator Interface) **/
+
+
+
 /**
  * 
  */
