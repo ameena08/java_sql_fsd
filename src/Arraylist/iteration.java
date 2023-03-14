@@ -1,4 +1,4 @@
-*/write a program to print all elemts in an ArrayList using Iterator */
+/*write a program to print all elemts in an ArrayList using Iterator */
 
 /**
  * 
