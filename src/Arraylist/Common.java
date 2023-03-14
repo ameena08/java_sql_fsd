@@ -1,3 +1,7 @@
+/* Write a program in java to find whether the array contain common elements or not */
+
+
+
 /**
  * 
  */
