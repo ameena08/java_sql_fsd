@@ -1,3 +1,6 @@
+*/write a java program to find the cumulative sum of elements in an array */
+
+
 /**
  * 
  */
