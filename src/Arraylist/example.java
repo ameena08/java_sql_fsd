@@ -1,3 +1,6 @@
+*/write a program to print the elements of an ArrayList */
+
+
 /**
  * 
  */
