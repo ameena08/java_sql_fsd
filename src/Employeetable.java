@@ -1,13 +1,21 @@
 /**
  * 
  */
-package ustbatch3.jdbc;
+package ustbatchno3.jdbc;
+
+/**
+ * @author Administrator
+ *
+ */
+
+
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
-public class Employeetable{
+
+public class Employeetable {
    public static void main(String args[]) throws SQLException {
       //Registering the Driver
       DriverManager.registerDriver(new com.mysql.jdbc.Driver());
@@ -25,13 +33,13 @@ public class Employeetable{
 //    String sql = "CREATE table employee( name Varchar(10), age INT)";
 //            stmt.executeUpdate(sql);
 //            System.out.println("table created successfully...");
-//            } 
-
-
-
-
-
-String query2= "insert into Employee values('Aiswarya',23)";
-stmt.execute(query2);
+            
+   String query2= "insert into Employee values('Aiswarya',24)";
+    stmt.execute(query2);
+   }
+ 
 }
-}
+
+
+
+

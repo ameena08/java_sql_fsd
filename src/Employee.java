@@ -1,43 +1,42 @@
-package ustbatchno3.testNG;
+/**
+ * 
+ */
+package ustbatchno3.jdbc;
 
 /**
- * Hello world!
+ * @author Administrator
  *
  */
-public class Employee 
-{
-    private String name;
-    private int age;
-    private String department;
-	public Employee(String name, int age, String department) {
-		super();
-		this.name = name;
-		this.age = age;
-		this.department = department;
+
+	
+	
+
+	import java.sql.Connection;
+	import java.sql.DriverManager;
+	import java.sql.SQLException;
+	import java.sql.Statement;
+
+	public class Employee {
+
 		
+			   static final String DB_URL = "jdbc:mysql://localhost/";
+			   static final String USER = "root";
+			   static final String PASS = "pass@word1";
+
+			   public static void main(String[] args) {
+			      // Open a connection
+			      try(Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			         Statement stmt = conn.createStatement();
+			      ) {		      
+			         String sql = "CREATE DATABASE Company";
+			         stmt.executeUpdate(sql);
+			         System.out.println("Database Company created successfully...");   	  
+			      } catch (SQLException e) {
+			         e.printStackTrace();
+			      
+		}
+
 	}
-	public String getName() {
-		return name;
 	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public String getDepartment() {
-		return department;
-	}
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-	@Override
-	public String toString() {
-		return "Employee [name=" + name + ", age=" + age + ", department=" + department + "]";
-	}
-    
-    
-}
+
+
