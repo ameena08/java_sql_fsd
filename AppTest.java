@@ -1,4 +1,4 @@
-package ustbatchno3.com.autowiring;
+package ustbatchno3.Constructorinjuction;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

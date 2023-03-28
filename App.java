@@ -1,9 +1,7 @@
-package ustbatchno3.com.autowiring;
+package ustbatchno3.Constructorinjuction;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-
 
 /**
  * Hello world!
@@ -11,15 +9,18 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-    	ApplicationContext context =   
-    		    new ClassPathXmlApplicationContext("application.xml");
-    	Notificationservice s=context.getBean("hi",Notificationservice.class);
-    	s.Notifyservices();
-    	Emailservice t=context.getBean("hello",Emailservice.class);
-    	t.sendmessages("Hi hello");
-    	SMSservices u=context.getBean("ho",SMSservices.class);
-    	u.sendmessages("jo");
-    }
+    public static void main( String[] args ) {
+    ApplicationContext context =   
+    new ClassPathXmlApplicationContext("application1.xml"); 
+    Roles s=context.getBean("Hi",Roles.class);
+    s.display();
+//    Roles t=context.getBean("Hello",Roles.class);
+//    t.display();
+//    Roles u=context.getBean("new",Roles.class);
+//    u.display();
+//    Roles v=context.getBean("jam",Roles.class);
+//    v.display();
+//    Roles w=context.getBean("jin",Roles.class);
+//    w.display();
+}
 }
