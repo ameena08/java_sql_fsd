@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!-- bean definitions here -->
+    <bean
+		id="hi" class="ustbatchno3.com.autowiring.Notificationservice" autowire="byName">	
+	</bean>
+	 <bean
+		id="hello" class="ustbatchno3.com.autowiring.Emailservice" autowire="byName">	
+	</bean>
+	<bean
+		id="ho" class="ustbatchno3.com.autowiring.SMSservices" autowire="byName">	
+	</bean>
+	
+</beans>
