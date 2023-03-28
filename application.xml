@@ -4,15 +4,47 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <!-- bean definitions here -->
+    <!-- bean definitions here -->
     <bean
-		id="hi" class="ustbatchno3.com.autowiring.Notificationservice" autowire="byName">	
-	</bean>
-	 <bean
-		id="hello" class="ustbatchno3.com.autowiring.Emailservice" autowire="byName">	
-	</bean>
-	<bean
-		id="ho" class="ustbatchno3.com.autowiring.SMSservices" autowire="byName">	
+		id="Hi" class="ustbatchno3.di_setterinjuction.Roles">
+		<property name="charactername" value="Anu"/>
+
+		<property name="responsibility" value="sister">
+			
+		</property>
 	</bean>
 	
+	    <bean
+		id="Hello" class="ustbatchno3.di_setterinjuction.Roles">
+		<property name="charactername" value="Anu"/>
+
+		<property name="responsibility" value="Mother">
+			
+		</property>
+	</bean>
+	
+	<bean
+		id="new" class="ustbatchno3.di_setterinjuction.Roles">
+		<property name="charactername" value="Anu"/>
+
+		<property name="responsibility" value="Daughter">
+			
+		</property>
+	</bean>
+	
+	<bean
+		id="jam" class="ustbatchno3.di_setterinjuction.Roles">
+		<property name="charactername" value="Anu"/>
+
+		<property name="responsibility" value="Wife">
+			
+		</property>
+	</bean>
+	
+	
+	
+		
+
+	
+
 </beans>

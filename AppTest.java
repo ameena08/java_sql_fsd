@@ -1,4 +1,4 @@
-package ustbatchno3.Constructorinjuction;
+package ustbatchno3.di_setterinjuction;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
