@@ -1,4 +1,4 @@
-package ustbatchno3.di_setterinjuction;
+package ustbatchno3.jdbc;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
