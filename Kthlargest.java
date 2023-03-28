@@ -1,10 +1,12 @@
 /**
  * 
  */
-package ustbatchno3.jdbc;
+package ustbatchno3.junit5testcases;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.Optional;
 import java.util.Scanner;
 
 /**
@@ -12,25 +14,22 @@ import java.util.Scanner;
  *
  */
 public class Kthlargest {
-	
-		public static void main(String args[]) {
-	
-	     Scanner sc=new Scanner(System.in);
-	     System.out.println("Enter the number  :  ");
-	     int n=sc.nextInt();
-	     
-	    
-	     LinkedList<Integer> list = new LinkedList<>(Arrays.asList(10,29,37,15,1,5,9,78));	
-		 int kth =  list.stream().distinct() .sorted() 
-		               .skip(n-1) 
-		               .findFirst()
-		               .orElseThrow();	
-		 System.out.println(n+"th largest number is"+kth);
-		}
+
+	/**
+	 * @param args
+	 */
+		    public static void main(String[] args) {
+		        
+		        LinkedList<Integer> linkedList = new LinkedList<>(Arrays.asList(10, 5, 20, 30, 15, 25,1,3,24));
+
+		        Scanner sc=new Scanner(System.in);
+		        System.out.println("Enter the number  :   ");
+		        int n = sc.nextInt(); 
+		         int nthLargest = linkedList.stream().distinct().sorted()
+		        		.skip(n-1).findFirst().orElseThrow();
+		            System.out.println(n + "th largest number is " + nthLargest);        	            
+		    }	
 	}
-
-
-
 
 
 

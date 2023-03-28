@@ -1,4 +1,4 @@
-package ustbatchno3.jdbc;
+package ustbatchno3.seleniumtesting;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
